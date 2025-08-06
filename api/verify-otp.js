@@ -1,6 +1,6 @@
-import connectDB from '../../lib/mongodb.js';
-import Otp from '../../models/Otp.js';
-import { validateEmail, validateOTP, sanitizeEmail } from '../../lib/validation.js';
+import connectDB from '../lib/mongodb.js';
+import Otp from '../models/Otp.js';
+import { validateEmail, validateOTP, sanitizeEmail } from '../lib/validation.js';
 import bcrypt from 'bcryptjs';
 
 export default async function handler(req, res) {
