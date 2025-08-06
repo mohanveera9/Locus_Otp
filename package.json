@@ -2,11 +2,10 @@
   "name": "locus-otp",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "dev": "vercel dev",
-    "build": "vercel build",
-    "deploy": "vercel"
+  "main": "api/send-otp.js",
+   "scripts": {
+    "build": "echo 'Build completed'",
+    "dev": "vercel dev"
   },
   "keywords": [],
   "author": "",
