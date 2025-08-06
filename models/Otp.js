@@ -1,4 +1,4 @@
-const mongoose = require('mongoose');
+import mongoose from 'mongoose';
 
 const otpSchema = new mongoose.Schema({
   email: {
@@ -27,7 +27,6 @@ const otpSchema = new mongoose.Schema({
   }
 });
 
-// Index for faster queries
 otpSchema.index({ email: 1, createdAt: 1 });
 
-module.exports = mongoose.model('Otp', otpSchema);
+export default mongoose.models.Otp || mongoose.model('Otp', otpSchema);
