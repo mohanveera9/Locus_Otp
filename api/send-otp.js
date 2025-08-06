@@ -1,9 +1,9 @@
-import connectDB from '../lib/mongodb.js';
-import Otp from '../models/Otp.js';
-import { generateOTP } from '../lib/otpGenerator.js';
-import { sendOTPEmail } from '../lib/emailService.js';
-import { validateEmail, sanitizeEmail } from '../lib/validation.js';
-import bcrypt from 'bcryptjs';
+const connectDB = require('../lib/mongodb.js');
+const Otp = require('../models/Otp.js');
+const { generateOTP } = require('../lib/otpGenerator.js');
+const { sendOTPEmail } = require('../lib/emailService.js');
+const { validateEmail, sanitizeEmail } = require('../lib/validation.js');
+const bcrypt = require('bcryptjs');
 
 export default async function handler(req, res) {
   // Set CORS headers
