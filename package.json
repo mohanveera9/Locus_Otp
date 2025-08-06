@@ -1,19 +1,10 @@
 {
   "name": "locus-otp",
   "version": "1.0.0",
-  "description": "OTP Verification API",
-  "main": "api/send-otp.js",
   "type": "module",
-  "scripts": {
-    "build": "echo 'Build completed'",
-    "dev": "vercel dev"
-  },
-  "keywords": ["otp", "verification", "api"],
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "mongoose": "^8.0.0",
     "nodemailer": "^6.9.7"
-  } 
+  }
 }
