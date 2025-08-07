@@ -47,7 +47,7 @@ export default async function handler(req, res) {
     if (!validateOTP(otp)) {
       return res.status(400).json({
         success: false,
-        message: 'OTP must be a 6-digit number'
+        message: 'OTP must be a 4-digit number'
       });
     }
 
